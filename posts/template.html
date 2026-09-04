@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- STEP 1: update the title and description below for this post -->
+  <title>Ieraksta nosaukums — Kultūra ap katra stūra</title>
+  <meta name="description" content="Īss ieraksta apraksts meklētājprogrammām.">
+
+  <link rel="icon" href="../assets/img/site/favicon.png">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a href="../index.html" class="site-logo">Kultūra<span>.</span></a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Atvērt izvēlni" aria-expanded="false">
+        <span></span>
+      </button>
+      <nav class="site-nav" data-nav>
+        <ul>
+          <li><a href="../index.html">Sākums</a></li>
+          <li><a href="../posts.html">Visi ieraksti</a></li>
+          <li><a href="../par-mani.html">Par mani</a></li>
+          <li><a href="../kontakti.html">Kontakti</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap post-header">
+      <!-- STEP 2: category + title + date. Keep the date in sync with the matching entry in posts.js -->
+      <span class="post-header__category">Kategorija</span>
+      <h1 class="post-header__title font-display">Ieraksta nosaukums</h1>
+      <p class="post-header__meta">1. janvārī, 2026</p>
+    </div>
+
+    <div class="wrap">
+      <!-- STEP 3: featured header image — replace src and alt -->
+      <div class="post-hero-image">
+        <img src="../assets/img/posts/PLACEHOLDER-header.jpg" alt="Apraksts attēlam">
+      </div>
+
+      <!-- STEP 4: main text. Use <p>, <h2> and <blockquote> as needed. -->
+      <article class="post-body">
+        <p>
+          Šeit sākas ieraksta teksts. Rakstiet brīvi — šis paragrāfs ir tikai vietturis,
+          lai parādītu, kā izskatīsies parasts teksta bloks.
+        </p>
+        <p>
+          Var pievienot vairākus paragrāfus, izceltus citātus vai apakšvirsrakstus,
+          lai strukturētu garākus ierakstus.
+        </p>
+
+        <h2>Apakšvirsraksts, ja nepieciešams</h2>
+        <p>
+          Turpiniet tekstu zem apakšvirsraksta.
+        </p>
+
+        <blockquote>
+          Izcelts citāts vai galvenā doma, ko vēlaties uzsvērt.
+        </blockquote>
+      </article>
+
+      <!-- STEP 5: embedded video — OPTIONAL. Delete this whole <section> if the post has no video.
+           Replace the src with a YouTube or Vimeo embed URL. -->
+      <section class="post-video">
+        <div class="post-video__frame">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            title="Video nosaukums"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
+      <!-- STEP 6: image gallery — OPTIONAL. Delete this whole <section> if the post has no gallery.
+           Add or remove <img> tags freely; the grid adjusts automatically. -->
+      <section class="post-gallery">
+        <div class="post-gallery__grid">
+          <img src="../assets/img/gallery/PLACEHOLDER-1.jpg" alt="Apraksts attēlam 1">
+          <img src="../assets/img/gallery/PLACEHOLDER-2.jpg" alt="Apraksts attēlam 2">
+          <img src="../assets/img/gallery/PLACEHOLDER-3.jpg" alt="Apraksts attēlam 3">
+        </div>
+      </section>
+
+      <div class="post-nav">
+        <a href="../posts.html">&larr; Atpakaļ uz visiem ierakstiem</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="site-footer__meta" style="margin-top:0; border-top:none; padding-top:0;">
+        <span>Kultūra ap katra stūra</span>
+        <span>&copy; <span data-current-year></span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/posts.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

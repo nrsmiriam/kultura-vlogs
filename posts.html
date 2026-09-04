@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visi ieraksti — Kultūra ap katra stūra</title>
+  <meta name="description" content="Visi vloga ieraksti par kultūru ikdienā, sakārtoti pēc datuma.">
+  <link rel="icon" href="assets/img/site/favicon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a href="index.html" class="site-logo">Kultūra<span>.</span></a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Atvērt izvēlni" aria-expanded="false">
+        <span></span>
+      </button>
+      <nav class="site-nav" data-nav>
+        <ul>
+          <li><a href="index.html">Sākums</a></li>
+          <li><a href="posts.html">Visi ieraksti</a></li>
+          <li><a href="par-mani.html">Par mani</a></li>
+          <li><a href="kontakti.html">Kontakti</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap page-header">
+      <h1 class="font-display">Visi ieraksti</h1>
+      <p>Katrs ieraksts ir mēģinājums apstāties pie kāda ikdienas stūra un paskatīties uzmanīgāk.</p>
+    </div>
+
+    <div class="wrap" style="padding-block: 0 5rem;">
+      <div class="post-grid" id="all-posts"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="site-footer__inner">
+        <div class="site-footer__cta">
+          <h2 class="font-display">Ir kāds vērojums, ar ko dalīties?</h2>
+          <p>Rakstiet, ja jums ir stāsts, ideja vai pārdomas par kultūru jūsu ikdienā.</p>
+          <a class="btn btn--primary" style="margin-top:1.25rem;" href="kontakti.html">Sazināties</a>
+        </div>
+        <div class="site-footer__links">
+          <a href="index.html">Sākums</a>
+          <a href="posts.html">Visi ieraksti</a>
+          <a href="par-mani.html">Par mani</a>
+          <a href="kontakti.html">Kontakti</a>
+        </div>
+      </div>
+      <div class="site-footer__meta">
+        <span>Kultūra ap katra stūra</span>
+        <span>&copy; <span data-current-year></span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/posts.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>injectPosts("all-posts");</script>
+</body>
+</html>

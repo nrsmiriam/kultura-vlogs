@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kultūra ap katra stūra</title>
+  <meta name="description" content="Personīgs vlogs par kultūru ikdienā — ielās, tradīcijās un pilsētas dzīvē.">
+  <link rel="icon" href="assets/img/site/favicon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a href="index.html" class="site-logo">Kultūra<span>.</span></a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Atvērt izvēlni" aria-expanded="false">
+        <span></span>
+      </button>
+      <nav class="site-nav" data-nav>
+        <ul>
+          <li><a href="index.html">Sākums</a></li>
+          <li><a href="posts.html">Visi ieraksti</a></li>
+          <li><a href="par-mani.html">Par mani</a></li>
+          <li><a href="kontakti.html">Kontakti</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="wrap hero" style="padding-block:0;">
+        <div>
+          <h1 class="hero__motto">Kultūra ap <em>katra</em> stūra.</h1>
+          <p class="hero__lede">
+            Kultūra nav tikai lieli pasākumi un muzeji. Tā izpaužas ielu tīrīšanā, likumos,
+            ikdienas notikumos, tradīcijās un svētkos — dažkārt tur, kur to vismazāk gaida.
+            Šis ir personīgo pārdomu un vērojumu vlogs par to visu.
+          </p>
+          <div class="hero__scroll-cue">
+            <span class="hero__scroll-cue-line"></span>
+            <span>Ritiniet tālāk</span>
+          </div>
+        </div>
+        <div class="hero__corners" aria-hidden="true">
+          <div class="corner-shape corner-shape--1"></div>
+          <div class="corner-shape corner-shape--2"></div>
+          <div class="corner-shape corner-shape--3"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--alt">
+      <div class="wrap manifesto">
+        <div>
+          <span class="manifesto__mark">”</span>
+          <h2 class="manifesto__title">Katrs stūris stāsta savu stāstu.</h2>
+        </div>
+        <div class="manifesto__body">
+          <p>
+            Bieži vien kultūru meklējam koncertzālēs vai izstāžu telpās, aizmirstot, ka tā rodas
+            arī tur, kur cilvēki dzīvo un satiekas ikdienā — pagalmā, rindā pie veikala, ielas stūrī.
+          </p>
+          <p>
+            Šis vlogs ir mēģinājums apstāties un paskatīties uzmanīgāk: kā mēs veidojam telpu ap sevi,
+            kādus paradumus mantojam un kurus radām paši, un kā pat mazākā ikdienas aina var atklāt
+            kaut ko par to, kas mēs esam.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>Jaunākie ieraksti</h2>
+          <a class="section-heading__link" href="posts.html">Skatīt visus ierakstus</a>
+        </div>
+        <div class="post-grid" id="latest-posts"></div>
+      </div>
+    </section>
+
+    <section class="section--alt">
+      <div class="wrap about-teaser">
+        <div class="about-teaser__media">
+          <img src="assets/img/site/portrets.jpg" alt="Autora portrets">
+        </div>
+        <div class="about-teaser__body">
+          <h2 class="font-display" style="font-size: clamp(1.6rem, 3vw, 2.1rem);">Par autoru</h2>
+          <p>
+            Esmu skolēns, kuru interesē tas, kā kultūra veidojas nevis tikai lielos notikumos,
+            bet ikdienas sīkumos. Šis vlogs ir skolas projekts, kas izauga par vietu, kur pierakstīt
+            šos vērojumus un dalīties ar tiem tālāk.
+          </p>
+          <a class="about-teaser__link" href="par-mani.html">Lasīt vairāk par mani</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="site-footer__inner">
+        <div class="site-footer__cta">
+          <h2 class="font-display">Ir kāds vērojums, ar ko dalīties?</h2>
+          <p>Rakstiet, ja jums ir stāsts, ideja vai pārdomas par kultūru jūsu ikdienā.</p>
+          <a class="btn btn--primary" style="margin-top:1.25rem;" href="kontakti.html">Sazināties</a>
+        </div>
+        <div class="site-footer__links">
+          <a href="index.html">Sākums</a>
+          <a href="posts.html">Visi ieraksti</a>
+          <a href="par-mani.html">Par mani</a>
+          <a href="kontakti.html">Kontakti</a>
+        </div>
+      </div>
+      <div class="site-footer__meta">
+        <span>Kultūra ap katra stūra</span>
+        <span>&copy; <span data-current-year></span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/posts.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>injectPosts("latest-posts", 3);</script>
+</body>
+</html>

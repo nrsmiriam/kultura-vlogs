@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakti — Kultūra ap katra stūra</title>
+  <meta name="description" content="Sazinieties par ierakstiem, sadarbību vai jautājumiem.">
+  <link rel="icon" href="assets/img/site/favicon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a href="index.html" class="site-logo">Kultūra<span>.</span></a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Atvērt izvēlni" aria-expanded="false">
+        <span></span>
+      </button>
+      <nav class="site-nav" data-nav>
+        <ul>
+          <li><a href="index.html">Sākums</a></li>
+          <li><a href="posts.html">Visi ieraksti</a></li>
+          <li><a href="par-mani.html">Par mani</a></li>
+          <li><a href="kontakti.html">Kontakti</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap page-header">
+      <h1 class="font-display">Sazinieties</h1>
+      <p>Ir stāsts, ideja vai vērojums, ar ko vēlaties dalīties? Rakstiet — ar prieku izlasīšu.</p>
+    </div>
+
+    <div class="wrap contact-grid" style="padding-bottom: 5rem;">
+      <form class="contact-form" name="kontakti" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="kontakti">
+        <div class="form-field">
+          <label for="vards">Vārds</label>
+          <input type="text" id="vards" name="vards" required>
+        </div>
+        <div class="form-field">
+          <label for="epasts">E-pasts</label>
+          <input type="email" id="epasts" name="epasts" required>
+        </div>
+        <div class="form-field">
+          <label for="zina">Ziņa</label>
+          <textarea id="zina" name="zina" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary" style="justify-self: start;">Nosūtīt ziņu</button>
+      </form>
+
+      <dl class="contact-details">
+        <div>
+          <dt>E-pasts</dt>
+          <dd>kultura@piemers.lv</dd>
+        </div>
+        <div>
+          <dt>Instagram</dt>
+          <dd>@kulturaapstuura</dd>
+        </div>
+        <div>
+          <dt>Atbildes laiks</dt>
+          <dd>Parasti 2–3 dienu laikā</dd>
+        </div>
+      </dl>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="site-footer__meta" style="margin-top:0; border-top:none; padding-top:0;">
+        <span>Kultūra ap katra stūra</span>
+        <span>&copy; <span data-current-year></span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/posts.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
