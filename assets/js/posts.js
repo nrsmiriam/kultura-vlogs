@@ -49,10 +49,10 @@ const VLOG_POSTS = [
   },
   {
     id: "Zāles augstuma likumi: sabiedrības apņemšanās",
-    title: "Rīta rindā pie maiznīcas: mikrokultūras piemērs",
-    date: "2026-04-11",
+    title: "Zāles augstuma likumi: sabiedrības apņemšanās — Kultūra ap katra stūra",
+    date: "2026-05-09",
     excerpt: "Zāles garuma ierobežojumi šķiet pašsaprotama norma drošības un kārtības dēļ, bet vai aiz tiem neslēpjas arī mūsu standarti par pieņemamo, skaisto un sakopto?",
-    thumbnail: "assets/img/posts/tresais-ieraksts-thumb.jpg",
+    thumbnail: "assets/img/posts/ceturtais-ieraksts-thumb.jpg",
     url: "posts/zales-plausana.html"
   }
 ];
