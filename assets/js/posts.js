@@ -56,5 +56,5 @@ const VLOG_POSTS = [
   thumbnail: "assets/img/posts/ielu-svetki-thumb.jpg",
   category: "Pilsētvide",
   url: "posts/zales-plausana.html"
-}
+  }
 ];
