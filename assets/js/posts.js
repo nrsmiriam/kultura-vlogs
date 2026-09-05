@@ -48,4 +48,13 @@ const VLOG_POSTS = [
     category: "Ikdiena",
     url: "posts/tresais-ieraksts.html"
   }
+  {
+  id: "zales-plausana",
+  title: "Zāles augstuma likumi: sabiedrības apņemšanās",
+  date: "2026-09-05",
+  excerpt: "Zāles garuma ierobežojumi šķiet pašsaprotama norma drošības un kārtības dēļ, bet vai aiz tiem neslēpjas arī mūsu standarti par pieņemamo, skaisto un sakopto?",
+  thumbnail: "assets/img/posts/ielu-svetki-thumb.jpg",
+  category: "Pilsētvide",
+  url: "posts/zales-plausana.html"
+}
 ];
