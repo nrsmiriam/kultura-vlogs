@@ -640,17 +640,3 @@ section { padding-block: clamp(3.5rem, 8vw, 7rem); }
   transition: transform 0.3s var(--ease-standard);
 }
 .post-gallery__grid img:hover { transform: scale(1.02); }
-
-.post-nav {
-  margin-top: 4rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--color-border);
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-.post-nav a {
-  font-size: 0.95rem;
-  color: var(--color-accent-deep);
-}
