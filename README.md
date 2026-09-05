@@ -5,10 +5,20 @@ Personīgs kultūras vlogs — vienkāršs, bez datubāzes, bez build soļa. Tī
 ## Kā publicēt jaunu ierakstu (3 soļi)
 
 1. **Nokopē veidni.** Iekš `posts/` nokopē `template.html` un pārsauc, piem. `posts/mans-jaunais-ieraksts.html`. Faila nosaukumam jāsakrīt ar `id` lauku, ko pievienosi 2. solī.
-2. **Uzraksti saturu.** Atver jauno failu un aizvieto vietturus (skaties `<!-- STEP 1 -->` līdz `<!-- STEP 6 -->` komentārus failā) — nosaukumu, kategoriju, datumu, virsattēlu, tekstu. Video un galerijas sadaļas ir izvēles — izdzēs tās, ja konkrētajam ierakstam tās nav vajadzīgas.
-3. **Pievieno ierakstu sarakstam.** Atver `assets/js/posts.js`, nokopē vienu objektu no `VLOG_POSTS` masīva un ielīmē to masīvā **tajā vietā, kur vēlies, lai ieraksts parādās** — ieraksti tiek rādīti tieši tādā secībā, kādā tie ir šajā masīvā (nekāda automātiska kārtošana pēc datuma nenotiek).
+2. **Uzraksti saturu.** Atver jauno failu un aizvieto vietturus (skaties `<!-- STEP 1 -->` līdz `<!-- STEP 6 -->` komentārus failā) — nosaukumu, datumu, virsattēlu, tekstu. Video un galerijas sadaļas ir izvēles — izdzēs tās, ja konkrētajam ierakstam tās nav vajadzīgas.
+3. **Pievieno ierakstu sarakstam.** Atver `assets/js/posts.js`, nokopē vienu objektu no `VLOG_POSTS` masīva un ielīmē to masīvā — vietai nav nozīmes, ieraksti vienmēr tiek rādīti pēc `date` (jaunākais pirmais).
 
-Sākumlapa vienmēr rāda pirmos 3 masīva ierakstus, "Visi ieraksti" lapa — visus, tādā pašā secībā.
+Sākumlapa vienmēr rāda 3 jaunākos ierakstus, "Visi ieraksti" lapa — visus, arī pēc datuma.
+
+## Traucējummeklēšana: "Ieraksti pēkšņi nerādās vispār"
+
+Ja pēc `posts.js` rediģēšanas pazūd **visi** ieraksti (ne tikai jaunais) — tas gandrīz vienmēr nozīmē JavaScript sintakses kļūdu šajā failā. Visbiežākie cēloņi:
+
+- **Iztrūkstošs komats** starp diviem objektiem masīvā, vai starp diviem laukiem viena objekta iekšā.
+- **Neaizvērtas pēdiņas** — ja teksta laukā (piem. `excerpt`) izmantoji taisnas pēdiņas `"..."` un aizmirsi tās aizvērt, vai izmantoji tās paša teksta iekšā bez `\"` aizbēgšanas.
+- **Iztrūkstoša vai lieka figūriekava** `{` / `}` ap objektu.
+
+**Kā pārbaudīt:** atver lapu pārlūkā, spied `F12` (vai labais peles taustiņš → "Inspicēt"), atver "Console" cilni. Ja tur redzi sarkanu kļūdu ar `posts.js` un rindas numuru — dodies uz to rindu un pārbaudi komatus/pēdiņas tieši ap to vietu. Vienas trūkstošas rakstzīmes dēļ pārlūks apstājas ar VISA faila lasīšanu, tāpēc "pazūd" pilnīgi visi ieraksti, nevis tikai jaunākais.
 
 ## Failu struktūra
 

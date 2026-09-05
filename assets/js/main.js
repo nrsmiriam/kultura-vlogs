@@ -15,6 +15,11 @@ function formatDateLV(isoDate) {
   return `${dayNum}. ${LV_MONTHS[month - 1]}, ${year}`;
 }
 
+/** Returns VLOG_POSTS sorted newest-first by date. */
+function getSortedPosts() {
+  return [...VLOG_POSTS].sort((a, b) => new Date(b.date) - new Date(a.date));
+}
+
 /** Builds the HTML string for a single post card. */
 function renderPostCard(post) {
   return `
@@ -24,7 +29,6 @@ function renderPostCard(post) {
         <img src="${post.thumbnail}" alt="" loading="lazy">
       </div>
       <div class="post-card__body">
-        <span class="post-card__category">${post.category}</span>
         <h3 class="post-card__title">${post.title}</h3>
         <p class="post-card__excerpt">${post.excerpt}</p>
         <span class="post-card__date">${formatDateLV(post.date)}</span>
@@ -33,11 +37,12 @@ function renderPostCard(post) {
   `;
 }
 
-/** Injects up to `limit` posts (in the order they appear in posts.js) into the element with id `targetId`. */
+/** Injects up to `limit` posts, newest first, into the element with id `targetId`. */
 function injectPosts(targetId, limit) {
   const target = document.getElementById(targetId);
   if (!target) return;
-  const posts = limit ? VLOG_POSTS.slice(0, limit) : VLOG_POSTS;
+  const sorted = getSortedPosts();
+  const posts = limit ? sorted.slice(0, limit) : sorted;
   if (posts.length === 0) {
     target.innerHTML = `<p class="empty-state">Vēl nav neviena ieraksta. Pirmais tuvojas.</p>`;
     return;
