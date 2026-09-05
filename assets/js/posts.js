@@ -24,35 +24,11 @@
 
 const VLOG_POSTS = [
   {
-    id: "pirmais-ieraksts",
-    title: "Ielu māksla kā pilsētas balss",
-    date: "2026-09-04",
-    excerpt: "Grafiti bieži tiek uzskatīti par vandālismu, taču tie var būt arī visatklātākais veids, kā pilsēta runā pati ar sevi.",
-    thumbnail: "assets/img/posts/pirmais-ieraksts-thumb.jpg",
-    url: "posts/pirmais-ieraksts.html"
-  },
-  {
-    id: "otrais-ieraksts",
-    title: "Kāpēc mēs joprojām svinam Jāņus tā, kā svinēja vecvecāki",
-    date: "2026-06-23",
-    excerpt: "Pārdomas par to, kā senā tradīcija paliek dzīva pat pilsētas pagalmā, nevis tikai laukos.",
-    thumbnail: "assets/img/posts/otrais-ieraksts-thumb.jpg",
-    url: "posts/otrais-ieraksts.html"
-  },
-  {
-    id: "tresais-ieraksts",
-    title: "Rīta rindā pie maiznīcas: mikrokultūras piemērs",
-    date: "2026-04-11",
-    excerpt: "Šķietami parasta ikdienas aina, kurā slēpjas negaidīti daudz nerakstītu noteikumu un pieklājības.",
-    thumbnail: "assets/img/posts/tresais-ieraksts-thumb.jpg",
-    url: "posts/tresais-ieraksts.html"
-  },
-  {
     id: "Zāles augstuma likumi: sabiedrības apņemšanās",
     title: "Zāles augstuma likumi: sabiedrības apņemšanās — Kultūra ap katra stūra",
-    date: "2026-05-09",
+    date: "2026-09-05",
     excerpt: "Zāles garuma ierobežojumi šķiet pašsaprotama norma drošības un kārtības dēļ, bet vai aiz tiem neslēpjas arī mūsu standarti par pieņemamo, skaisto un sakopto?",
-    thumbnail: "assets/img/posts/ceturtais-ieraksts-thumb.jpg",
+    thumbnail: "assets/img/posts/pirmais-ieraksts-thumb.jpg",
     url: "posts/zales-plausana.html"
   }
 ];
