@@ -15,14 +15,6 @@ function formatDateLV(isoDate) {
   return `${dayNum}. ${LV_MONTHS[month - 1]}, ${year}`;
 }
 
-/** Returns VLOG_POSTS sorted newest-first, with featured posts pinned to the top. */
-function getSortedPosts() {
-  return [...VLOG_POSTS].sort((a, b) => {
-    if (a.featured !== b.featured) return a.featured ? -1 : 1;
-    return new Date(b.date) - new Date(a.date);
-  });
-}
-
 /** Builds the HTML string for a single post card. */
 function renderPostCard(post) {
   return `
@@ -41,11 +33,11 @@ function renderPostCard(post) {
   `;
 }
 
-/** Injects up to `limit` sorted posts into the element with id `targetId`. */
+/** Injects up to `limit` posts (in the order they appear in posts.js) into the element with id `targetId`. */
 function injectPosts(targetId, limit) {
   const target = document.getElementById(targetId);
   if (!target) return;
-  const posts = limit ? getSortedPosts().slice(0, limit) : getSortedPosts();
+  const posts = limit ? VLOG_POSTS.slice(0, limit) : VLOG_POSTS;
   if (posts.length === 0) {
     target.innerHTML = `<p class="empty-state">Vēl nav neviena ieraksta. Pirmais tuvojas.</p>`;
     return;
